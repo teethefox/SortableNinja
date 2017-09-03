@@ -1,0 +1,42 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sortable Ninja</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+  <style type="text/css">
+  body{
+      background-color:black;
+      width:700px;
+  }
+
+  </style>
+</head>
+<body>
+ 
+<div id="sortable">
+  <img src="image_part_001.png" alt="Part One">
+  <img src="image_part_002.png" alt="Part Two">
+  <img src="image_part_003.png" alt="Part Three">
+  <img src="image_part_004.png" alt="Part Four">
+  <img src="image_part_005.png" alt="Part Five">
+</div>
+ 
+ 
+</body>
+</html>
